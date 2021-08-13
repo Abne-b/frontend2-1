@@ -1,6 +1,5 @@
 let userScore = 0;
 let cpuScore = 0;
-
 let choices = ["Pedra", "Papel","Tesoura"];
 
 while(userScore!=2||cpuScore!=2){
