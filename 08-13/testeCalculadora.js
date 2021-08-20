@@ -1,10 +1,29 @@
 
-let calculadora = require('./calculadora');
+import calculadora from './calculadora.js';
 
-for(let i = 0; i<10;i++){
-    console.log(`
-    Soma dos números ${i} e ${i+1}: ${calculadora.somar(i,i+1)}
-    Divisão dos números ${i} e ${i+1}: ${calculadora.dividir(i,i+1)}
-    Subtração dos números ${i} e ${i+1}: ${calculadora.subtrair(i,i+1)}
-    Multiplicação dos números ${i} e ${i+1}: ${calculadora.multiplicar(i,i+1)}`)
+let arr = [15,23,4252,2456,4576543,64356743];
+
+// for(let numero of arr){
+//     if(numero==arr[arr.length-1])continue;
+//     console.log(`
+//     Soma dos números ${numero} e ${arr[arr.indexOf(numero)+1]}: ${calculadora.somar(arr[arr.indexOf(numero)])}
+//     Divisão dos números ${numero} e ${arr[arr.indexOf(numero)+1]}: ${calculadora.dividir(arr[arr.indexOf(numero)])}
+//     Subtração dos números ${numero} e ${arr[arr.indexOf(numero)+1]}: ${calculadora.subtrair(arr[arr.indexOf(numero)])}
+//     Multiplicação dos números ${numero} e ${arr[arr.indexOf(numero)+1]}: ${calculadora.multiplicar(arr[arr.indexOf(numero)])}`)
+// }
+
+let aluno = {
+    nome:"Matheus",
+    sobrenome:"Andrade",
+    faltas: 1,
+    média:7
 }
+
+for (const propriedade in aluno) {
+
+    console.log(`${propriedade}:${aluno[propriedade]}`);
+    
+}
+
+
+

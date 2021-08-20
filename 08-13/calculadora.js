@@ -1,12 +1,12 @@
 
 let calculadora = {
-    somar:(...n)=>n.reduce((acc,e)=>acc+e),
-    subtrair:(...n)=>n.reduce((acc,e)=>acc-e),
-    multiplicar:(...n)=>n.reduce((acc,e)=>acc*e),
-    dividir:(...n)=>{
+    somar:function (...n){return n.reduce((acc,e)=>acc+e)},
+    subtrair:function (...n){return n.reduce((acc,e)=>acc-e)},
+    multiplicar:function (...n){return n.reduce((acc,e)=>acc*e)},
+    dividir:function (...n){
         if(n.indexOf(0)!=-1)return "Não é possível divir por zero";
         return n.reduce((acc,e)=>acc/e);
     },
 }
 
-module.exports=calculadora;
+export default calculadora;
