@@ -49,10 +49,10 @@ function finishForm(){
     if(previewChildrenLength==0)return;
     
     const newCard = preview.cloneNode(true);
-    preview.classList.add("hidden")
     newCard.id="";
     document.getElementById("card-container").appendChild(newCard);
-    for(let i=0;i<previewChildrenLength;i++){
-        preview.removeChild(preview.children[0]);
-    }
+    // preview.classList.add("hidden")
+    // for(let i=0;i<previewChildrenLength;i++){
+    //     preview.removeChild(preview.children[0]);
+    // }
 }

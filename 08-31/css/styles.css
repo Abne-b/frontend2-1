@@ -21,9 +21,11 @@
     visibility: hidden;
 }
 .card{
+    width: fit-content;
     display: flex;
     align-items:center;
     justify-content:center;
+    place-self: center;
     border-radius: 5px;
     box-shadow: 0 0 8px 1px black;
     padding: 0 1em 1em;
