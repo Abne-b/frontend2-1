@@ -39,17 +39,17 @@ function addInput(type){
     if(!type)return;
     const input = document.createElement("input");
     input.type=type;
-    input.style.background=bgColor.value;
-    input.style.color=fgColor.value;
+    input.style.background=preview.style.backgroundColor;
+    input.style.color=preview.style.color;
     preview.appendChild(input);
     document.querySelectorAll(".hidden").forEach(e=>e.classList.remove("hidden"));
 }
 function finishForm(){
     const previewChildrenLength = preview.children.length;
-    if(previewChieldLength==0)return;
+    if(previewChildrenLength==0)return;
     
-    preview.classList.add("hidden")
     const newCard = preview.cloneNode(true);
+    preview.classList.add("hidden")
     newCard.id="";
     document.getElementById("card-container").appendChild(newCard);
     for(let i=0;i<previewChildrenLength;i++){
