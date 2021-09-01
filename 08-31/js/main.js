@@ -51,8 +51,8 @@ function finishForm(){
     const newCard = preview.cloneNode(true);
     newCard.id="";
     document.getElementById("card-container").appendChild(newCard);
-    // preview.classList.add("hidden")
-    // for(let i=0;i<previewChildrenLength;i++){
-    //     preview.removeChild(preview.children[0]);
-    // }
+    preview.classList.add("hidden")
+    for(let i=0;i<previewChildrenLength;i++){
+        preview.removeChild(preview.children[0]);
+    }
 }
