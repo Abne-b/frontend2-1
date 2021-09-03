@@ -19,7 +19,6 @@ body{
     flex-wrap: wrap;
     padding: 3%;
 }
-
 .card{
     display: flex;
     cursor: pointer;
